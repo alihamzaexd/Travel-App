@@ -3,7 +3,7 @@
 
 <head>
 <?php
-    // including header file containing all style and JQuery files 
+// including header file containing all style and JQuery files ...
 
 session_start();
 include 'header.php';
@@ -12,9 +12,7 @@ include 'Functions.php';
 include 'LogInFunctions.php';
 include 'hotelBookingRecord.php';
 include 'UtilityFunctions_Booking.php';
-
 $db= MakeConnection2();
-
 
 $hid =$_SESSION['hotelid'];
 $sid = $_SESSION['searchid'];
@@ -24,7 +22,6 @@ $charges = $_SESSION['charges'];
 $rating = $_SESSION['rating'];
 $totalstay = $_SESSION['totalstay'];
 $email = $_SESSION['userEmail'];
-
 
 if(isset($_POST['bookHotel']))
 {
